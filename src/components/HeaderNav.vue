@@ -32,15 +32,14 @@
 <style>
 @import '../resource/css/common.css';
 	.hN-header{
-		height: 80px;
-		/*background-image: url('');*/
+		height: 90px;
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
 	.hN-nav{
 		max-width:1100px;
 		height: inherit;
-		line-height: 80px;
+		line-height: 90px;
 		margin: 0 auto;
 		overflow: hidden;
 		display: flex;

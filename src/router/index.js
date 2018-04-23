@@ -7,6 +7,7 @@ import Member from '@/pages/Member'
 import NewProduct from '@/pages/NewProduct'
 import Product from '@/pages/Product'
 import SpicyStrip from '@/pages/SpicyStrip'
+import ProductDetail from '@/pages/ProductDetail'
 
 Vue.use(Router)
 
@@ -20,22 +21,26 @@ export default new Router({
     {
       path: '/hotSell',
       name: 'hotSell',
-      component: HotSell
+      component: HotSell,
+      redirect:'product'
     },
     {
       path: '/meat',
       name: 'meat',
-      component: Meat
+      component: Meat,
+      redirect:'product'
     },
     {
       path: '/member',
       name: 'member',
-      component: Member
+      component: Member,
+      redirect:'product'
     },
     {
       path: '/newProduct',
       name: 'newProduct',
-      component: NewProduct
+      component: NewProduct,
+      redirect:'product'
     },
     {
       path: '/product',
@@ -45,7 +50,13 @@ export default new Router({
     {
       path: '/spicyStrip',
       name: 'spicyStrip',
-      component: SpicyStrip
+      component: SpicyStrip,
+      redirect:'product'
+    },
+    {
+      path: '/productDetail',
+      name: 'productDetail',
+      component: ProductDetail,
     }
   ]
 })
